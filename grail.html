@@ -6,24 +6,58 @@
     <link rel="stylesheet" href="assets/css/grail.css">
   </head>
   <body>
-    <div id="header">
+    <nav>
       <div id="logo"></div>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <div id="menu-button">MENU</div>
+      <ul id="menu">
+        <li>Holy</li>
+        <li>Holy</li>
+        <li>Holy</li>
+        <li>Grail</li>
       </ul>
+    </nav>
+
+    <div class="intro">
+      <h1> Holy Grail, flexbox style </h1>
+      <p>The so-called "Holy Grail" of web design is a two or three column layout with a menu and footer. The layout should expand and compress responsively when the screen shrinks or grows.</p>
+      <p>In this page I've implemented it with CSS Flexbox, a relatively modern technology that is not supported by all browsers. Arguably up to 95% of them when used with the correct prefixes.</p>
+      <p>In the CSS, I've split out the flexbox properties from the rest of the style and put them at the top, to make the basics you need really clear.</p>
+      <p> I have chosen to run with the Grail theme</a>
     </div>
     <main>
-      <h1> The Holy Grail, flexbox style </h1>
       <section>
+        <h2>Col 1 </h2>
+        <img id="pic-1" src="assets/img/holy-grail-cup.png">
       </section>
-      <section></section>
-      <section></section>
+      <section>
+        <h2>Col 2 </h2>
+        <img id="pic-spin" src="assets/img/holy-grail-cup.png">
+        </img>
+      </section>
+      <section>
+        <h2>Col 3 </h2>
+        <img id="pic-3" src="assets/img/holy-grail-cup.png">
+      </section>
   </main>
-  <div id="footer">
+  <footer>
+    <div></div>
+    <div></div>
+    <div></div>
+  </footer>
 
-  </div>
+<script>
+var menuButton = document.getElementById("menu-button"),
+    menu = document.getElementById("menu");
+
+    menuButton.addEventListener(
+        "click",
+        function(){
+          menu.classList.toggle("hide");
+        },
+        false);
+
+</script>
+
+
   </body>
-</html
+</html>

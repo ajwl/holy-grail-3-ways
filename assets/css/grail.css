@@ -1,0 +1,158 @@
+/* THE FLEXBOX BIT - MINIMUM LAYOUT CSS  */
+main {
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+main > section {
+  flex: 1 1 33%;
+  -webkit-flex: 1 1 33%;
+
+  align-content: center;
+  -webkit-align-content: center;
+}
+
+@media (max-width:500px){
+  main {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+  main > section {
+    flex: 1 1 100%;
+    -webkit-flex: 1 1 100%;
+  }
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+nav li {
+  flex: 1 1 100%;
+  -webkit-flex: 1 1 100%;
+}
+
+@media (max-width:500px) {
+  nav ul {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+}
+
+/*-------------------------------*/
+/*GENERAL STYLING */
+body {
+  padding: 1em;
+  font-family: Verdana, sans-serif;
+  width: 70%;
+  margin: auto;
+  background-image: url("../img/holy-grail-ray.jpg");
+  background: cover;
+}
+@media (max-width:600px){
+  body {
+   width: 95%;
+   margin: auto;
+   padding: 3em 1em 1em 1em;
+ }
+}
+
+/*HEADER STYLING */
+nav ul {
+  padding: 0;
+}
+nav li {
+  list-style: none;
+  background-color: blue;
+  margin-right: 1em;
+  text-align: center;
+  color: white;
+  padding: .5em 0;
+}
+nav li:last-child {
+  margin: 0;
+}
+#logo,
+#menu-button {
+  position: absolute;
+  background-color: red;
+  text-align: center;
+  color: white;
+  height: 60px;
+  width: 50px;
+}
+#logo {
+  left: 1em;
+  top: 0;
+}
+#menu-button {
+  display: none;
+}
+
+@media (max-width:500px){
+  nav li {
+    margin: 0 0 1em 0;
+  }
+  nav ul {
+    margin-left: 0;
+  }
+  #menu-button {
+    display: block;
+    right: 1em;
+    top: 0;
+  }
+  .hide {
+    display: none;
+  }
+}
+
+/*BODY STYLING */
+main > section {
+  background-color: #99cfe0;
+  margin: 0 2em 0 0;
+  min-height: 20em;
+  text-align: center;
+  padding: .5em;
+  max-width: 25em;
+  min-width: 5em;
+}
+main > section:last-child {
+  margin: 0;
+}
+section img {
+  width: 5em;
+}
+#pic-spin {
+  transition: transform: .8s ease-in-out;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+}
+#pic-spin:hover,
+#pic-spin:active {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+#pic-1 {
+  transition:transform: 1 ease-out;
+  -webkit-transition: -webkit- transform: 1 ease-in-out;
+}
+#pic-1:hover,
+#pic-1:active {
+  transform: scaleY(0.5);
+}
+#pic-3 {
+  transition:transform: 1 ease-out;
+  -webkit-transition: -webkit- transform: 1 ease-in-out;
+}
+#pic-3:hover,
+#pic-3:active {
+  transform:scale(2);
+}
+
+@media (max-width:500px){
+  main > section {
+    margin: 0 0 1em 0;
+  }
+}
+

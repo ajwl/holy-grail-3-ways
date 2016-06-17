@@ -22,6 +22,20 @@ main > section {
     -webkit-flex: 1 1 100%;
   }
 }
+nav .buttons {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+nav #logo {
+  flex: 1 1 3em;
+  -webkit-flex: 1 1 3em;
+ }
+nav #menu-button {
+  flex: 1 1 2em;
+  -webkit-flex: 1 1 2em;
+}
 
 nav ul {
   display: flex;
@@ -38,6 +52,9 @@ nav li {
   nav ul {
     flex-direction: column;
     -webkit-flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
   }
 }
 
@@ -76,16 +93,12 @@ nav li:last-child {
 }
 #logo,
 #menu-button {
-  position: absolute;
+  position: relative;
   background-color: red;
   text-align: center;
   color: white;
   height: 60px;
   width: 50px;
-}
-#logo {
-  left: 1em;
-  top: 0;
 }
 #menu-button {
   display: none;
@@ -100,7 +113,7 @@ nav li:last-child {
   }
   #menu-button {
     display: block;
-    right: 1em;
+    right: .5em;
     top: 0;
   }
   .hide {

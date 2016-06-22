@@ -1,0 +1,124 @@
+/* FLOAT */
+nav li {
+  display: inline-block;
+  width: 23%;
+  margin-right: 1%;
+}
+nav li:last-child {
+  margin-right: none
+}
+main section {
+  display: inline-block;
+  width: 32%;
+}
+
+@media screen and (max-width: 400px){
+  nav li {
+    display: block;
+    width: 100%;
+    margin: .5em auto;
+    min-width: 2em;
+  }
+  main section {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* GENERAL */
+body {
+  padding: 1em;
+  background-image: url(img/cloudy-sky.jpg);
+  background-position: cover;
+  font-family: "Proxima Nova", Arial;
+}
+
+/* HEADER */
+nav ul {
+  padding: 0;
+}
+nav li {
+  background-color: #010101;
+  list-style: none;
+  text-align: center;
+  min-height: 2em;
+  color: white;
+  padding-top: .3em
+}
+#logo,
+#menu-button {
+  width: 40px;
+  height: 40px;
+}
+#logo {
+  background-color: #82b4ef;
+  display: inline-block;
+}
+#menu-button {
+  background-color: #010101;
+  display: none;
+  float: right;
+  padding: .2em;
+}
+#menu-button hr {
+  border: 3px solid #b6a089;
+  width: 1.5em;
+  margin: .2em auto;
+}
+
+
+@media screen and (max-width: 400px){
+  #menu-button {
+    display: inline-block;
+  }
+  #menu {
+    transition: transform 500ms;
+    transform: translate(0px, -260px);
+  }
+  #menu.move-in {
+    transform: translate(0, 0);
+  }
+  main#content {
+    transition: transform 500ms;
+    transform: translate(0px, -200px);
+  }
+  main#content.move-in {
+    transform: translate(0, 0);
+  }
+}
+
+/* MAIN */
+main {
+  padding: 1em 0;
+  transform: translate(0px, 0px);
+}
+main section {
+  background-color: #aaaab4;
+  text-align: center;
+  min-height: 20em;
+  background-position: center;
+  transition: .9s ease;
+  opacity: 1;
+}
+main section:hover {
+  opacity: 0.2;
+}
+main section:nth-child(1) {
+  background-image:url(img/tower-3.jpg);
+}
+main section:nth-child(2) {
+  background-image:url(img/tower-2.jpg);
+}
+main section:nth-child(3) {
+  background-image:url(img/tower-4.jpg);
+}
+main section:nth-child(3):hover {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+main h2 {
+  color: white;
+  text-shadow: 2px 2px 0 black;
+}
+
+

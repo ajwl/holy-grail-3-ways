@@ -29,12 +29,12 @@ nav .buttons {
 }
 
 nav #logo {
-  flex: 1 1 3em;
-  -webkit-flex: 1 1 3em;
+  flex: 8 1 auto;
+  -webkit-flex: 8 1 auto;
  }
 nav #menu-button {
-  flex: 1 1 2em;
-  -webkit-flex: 1 1 2em;
+  flex: 1 1 1em;
+  -webkit-flex: 1 1 1em;
 }
 
 nav ul {
@@ -62,17 +62,17 @@ nav li {
 /*GENERAL STYLING */
 body {
   padding: 1em;
-  font-family: Verdana, sans-serif;
+  font-family: 'Lucida Sans Unicode', sans-serif;
   width: 70%;
   margin: auto;
-  background-image: url("../img/holy-grail-ray.jpg");
+  background-position: center;
   background: cover;
 }
 @media (max-width:600px){
   body {
    width: 95%;
    margin: auto;
-   padding: 3em 1em 1em 1em;
+   padding: 1em;
  }
 }
 
@@ -82,7 +82,7 @@ nav ul {
 }
 nav li {
   list-style: none;
-  background-color: blue;
+  background-color: #f9b722;
   margin-right: 1em;
   text-align: center;
   color: white;
@@ -93,28 +93,32 @@ nav li:last-child {
 }
 #logo,
 #menu-button {
-  position: relative;
-  background-color: red;
+  background-color:#1dfbe6;
   text-align: center;
   color: white;
   height: 60px;
-  width: 50px;
 }
 #menu-button {
   display: none;
 }
 
+#menu-button hr {
+  border: 3px solid black;
+  width: 1.5em;
+  margin: .2em auto;
+}
+
 @media (max-width:500px){
   nav li {
-    margin: 0 0 1em 0;
+    margin: 0 0 .5em 0;
   }
   nav ul {
     margin-left: 0;
   }
-  #menu-button {
+  nav #menu-button {
     display: block;
-    right: .5em;
-    top: 0;
+    padding: 3% 0;
+    height: auto;
   }
   .hide {
     display: none;
@@ -122,11 +126,16 @@ nav li:last-child {
 }
 
 /*BODY STYLING */
+.intro p,
+.intro h1 {
+  color: black;
+}
+
 main > section {
   background-color: #99cfe0;
+  text-align: center;
   margin: 0 2em 0 0;
   min-height: 20em;
-  text-align: center;
   padding: .5em;
   max-width: 25em;
   min-width: 5em;

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"
+          name="viewport"
+          content="width=device-width, initial-scale=1.0" >
+    <title>The Holy Grail - with inline-block and float</title>
+    <link rel="stylesheet" href="assets/float.css">
+  </head>
+  <body>
+    <nav>
+      <div id="logo"></div>
+      <div id="menu-button">
+        <hr>
+        <hr>
+        <hr>
+      </div>
+      <ul id="menu">
+        <li>Box 1</li>
+        <li>Box 2</li>
+        <li>Box 3</li>
+        <li>Box 4</li>
+      </ul>
+    </nav>
+    <main id="content">
+      <section>
+        <h2>Col 1</h2>
+      </section>
+      <section>
+        <h2>Col 2</h2>
+      </section>
+      <section>
+        <h2>Col 3</h2>
+      </section>
+    </main>
+  </body>
+</html>
+
+<script>
+var menuButton = document.getElementById("menu-button"),
+    menu = document.getElementById("menu"),
+    main = document.getElementById("content");
+
+    menuButton.addEventListener(
+        "click",
+        function(){
+          menu.classList.toggle("move-in");
+          main.classList.toggle("move-in");
+        },
+        false);
+
+</script>

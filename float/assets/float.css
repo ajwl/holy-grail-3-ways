@@ -30,7 +30,7 @@ body {
   padding: 1em;
   background-image: url(img/cloudy-sky.jpg);
   background-position: cover;
-  font-family: "Proxima Nova", Arial;
+  font-family: "Proxima Nova", Arial, sans-serif;
 }
 
 /* HEADER */
@@ -85,11 +85,15 @@ nav li {
   main#content.move-in {
     transform: translate(0, 0);
   }
+  div.pullme {
+    top: 80px;
+    right: 10px;
+  }
 }
 
 /* MAIN */
 main {
-  padding: 1em 0;
+  padding: 2em 0;
   transform: translate(0px, 0px);
 }
 main section {
@@ -103,16 +107,16 @@ main section {
 main section:hover {
   opacity: 0.2;
 }
-main section:nth-child(1) {
+main section:nth-of-type(1) {
   background-image:url(img/tower-3.jpg);
 }
-main section:nth-child(2) {
-  background-image:url(img/tower-2.jpg);
+main section:nth-of-type(2) {
+  background-image: url(img/tower-2.jpg);
 }
-main section:nth-child(3) {
+main section:nth-of-type(3) {
   background-image:url(img/tower-4.jpg);
 }
-main section:nth-child(3):hover {
+main section:nth-of-type(3):hover {
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
@@ -121,4 +125,22 @@ main h2 {
   text-shadow: 2px 2px 0 black;
 }
 
+/* PULL AND HOVER CALLS */
+.pullme {
+  z-index: 3;
+  font-size: small;
+  position: fixed;
+  top: 40px;
+  right: 10px;
+}
+.pullme span.arrow {
+  xbackground-image:url(img/arrow.png);
+}
 
+.hoverme {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: small;
+  z-index: 3;
+}

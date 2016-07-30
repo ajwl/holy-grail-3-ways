@@ -12,6 +12,7 @@ main section {
   width: 32%;
 }
 
+
 @media screen and (max-width: 400px){
   nav li {
     display: block;
@@ -89,7 +90,7 @@ nav li {
 
 /* MAIN */
 main {
-  padding: 1em 0;
+  padding: 0em 1em 0 0;
   transform: translate(0px, 0px);
 }
 main section {
@@ -103,16 +104,16 @@ main section {
 main section:hover {
   opacity: 0.2;
 }
-main section:nth-child(1) {
+main section:nth-of-type(1) {
   background-image:url(img/tower-3.jpg);
 }
-main section:nth-child(2) {
+main section:nth-of-type(2) {
   background-image:url(img/tower-2.jpg);
 }
-main section:nth-child(3) {
+main section:nth-of-type(3) {
   background-image:url(img/tower-4.jpg);
 }
-main section:nth-child(3):hover {
+main section:nth-of-type(3):hover {
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
 }
@@ -121,4 +122,39 @@ main h2 {
   text-shadow: 2px 2px 0 black;
 }
 
+/* PULL ME */
+#pullme {
+  position: fixed;
+  right: 5px;
+  width: 2em;
+}
+#pullme img {
+  width: 40px;
+}
+
+/* HOVER OVERME */
+#hoverme {
+  position: relative;
+}
+#hoverme img {
+  width: 26px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+
+}
+@media screen and (max-width: 400px){
+#hoverme {
+    margin-bottom: -1em;
+  }
+}
+
+/*LOGO BACKGROUND */
+
+#logo.sunny {
+  background-image: url(img/cloud.png);
+}
+
+#logo.cloudy {
+  background-image: url(img/sun.png);
+}
 

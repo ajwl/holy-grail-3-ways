@@ -1,0 +1,22 @@
+/* GRID CSS */
+
+nav div {
+  background-color: blue;
+  min-height: 1em;
+}
+
+nav,
+#wrapper {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 10px;
+}
+
+#wrapper .box {
+  background-color: cyan;
+  min-height: 15em;
+}
+
+nav div {
+
+}

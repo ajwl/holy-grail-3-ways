@@ -12,14 +12,42 @@
       <div class="head a"></div>
       <div class="head b"></div>
       <div class="head c"></div>
+      <div class="head d"></div>
     </nav>
     <main>
-      <h1>CSS Grid - the Holy Grail</h1>
-      <p>For this layout to work, you need to enable the flag in Chrome that allows the browser to use the experimental Grid technology.Load the url chrome://flags URL and scroll down to the option to Enable experimental Web Platform features, and hit enable. </p>
+      <h1>The Holy Grail - with CSS Grid</h1>
+
+      <div id="pullme">
+        Pull me
+        <img src="assets/img/arrow4.png">
+      </div>
+
+      <p>Grid is great.</p>
+      <p> Barely 3 lines of code are needed to produce the 3 column and header layout that used to be known as the "Holy Grail of web development". Amazing.</p>
+      <p>
+        <span class="highlight">
+        display: grid; <br/>
+        grid-template-columns: 33%; <br/>
+          grid-gap: 10px;
+        </span>
+      </p>
+      <p> Using <span class="highlight"> grid-template-columns: none; </span> with a media query for screen widths of under 400px is enough to flip this into a single column for the mobile view.</p>
+      <p>For this layout to work, you need to enable the flag in Chrome that allows the browser to use the experimental Grid technology. <span>Paste <span class="highlight"> chrome://flags </span> into the URL bar and scroll down to the option to Enable experimental Web Platform features, and hit enable. </p>
+        <p>Hover over the boxes below to see examples of the experimental CSS transform property.</p>
+      <div id="hoverme">
+        <img src="assets/img/arrow4.png">
+        Hover over me
+      </div>
       <div id="wrapper">
-        <div class="box a"></div>
-        <div class="box b"></div>
-        <div class="box c"></div>
+        <div class="box a">
+          <p>This skews</p>
+        </div>
+        <div class="box b">
+          <p>This turns into an egg</p>
+        </div>
+        <div class="box c">
+          <p>This one goes kinda crazy</p>
+        </div>
       </div>
     </main>
   </body>

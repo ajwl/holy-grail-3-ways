@@ -29,7 +29,7 @@ main section {
 /* GENERAL */
 body {
   padding: 1em;
-  background-image: url(img/cloudy-sky.jpg);
+  background-image: url(img/sunny-sky.jpg);
   background-position: cover;
   font-family: "Proxima Nova", Arial;
 }
@@ -39,7 +39,7 @@ nav ul {
   padding: 0;
 }
 nav li {
-  background-color: #010101;
+  background-color: #b5b1b1;
   list-style: none;
   text-align: center;
   min-height: 2em;
@@ -52,17 +52,17 @@ nav li {
   height: 40px;
 }
 #logo {
-  background-color: #82b4ef;
+  background-color: #c53827;
   display: inline-block;
 }
 #menu-button {
-  background-color: #010101;
+  background-color: #b5b1b1;
   display: none;
   float: right;
   padding: .2em;
 }
 #menu-button hr {
-  border: 3px solid #b6a089;
+  border: 3px solid #1b1a1a;
   width: 1.5em;
   margin: .2em auto;
 }
@@ -108,7 +108,7 @@ main section:nth-of-type(1) {
   background-image:url(img/tower-3.jpg);
 }
 main section:nth-of-type(2) {
-  background-image:url(img/tower-2.jpg);
+  background-image:url(img/tower-5.jpg);
 }
 main section:nth-of-type(3) {
   background-image:url(img/tower-4.jpg);
@@ -148,13 +148,4 @@ main h2 {
   }
 }
 
-/*LOGO BACKGROUND */
-
-#logo.sunny {
-  background-image: url(img/cloud.png);
-}
-
-#logo.cloudy {
-  background-image: url(img/sun.png);
-}
 

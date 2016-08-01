@@ -1,22 +1,96 @@
 /* GRID CSS */
+/* thi is it - honest! */
 
+#wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-gap: 10px;
+}
+nav {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 5px;
+}
+
+@media screen and (max-width: 400px){
+  #wrapper {
+    grid-template-columns: none;
+  }
+  nav {
+    grid-template-columns: none;
+  }
+}
+
+/* GENERAL */
+h1, p {
+  font-family: sans-serif;
+}
+h1{
+  text-transform: uppercase;
+}
+body {
+  padding: 2em;
+}
+#wrapper .box {
+  background-color: cyan;
+  min-height: 15em;
+  padding: 1em .5em;
+}
+.highlight {
+  background-color: #ecebeb;
+}
 nav div {
   background-color: blue;
   min-height: 1em;
 }
-
-nav,
-#wrapper {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-gap: 10px;
-}
-
-#wrapper .box {
+.head:hover {
   background-color: cyan;
-  min-height: 15em;
+}
+.a p,
+.b p,
+.c p {
+  text-align: center;
 }
 
-nav div {
-
+/* SHAPES */
+#wrapper .box.a:hover {
+  transition: transform 500ms;
+  transform: skew(20deg, 30deg);
 }
+#wrapper .box.b:hover {
+  transition: transform 500ms;
+  transform: rotate(0.5turn);
+  border-radius: 100%;
+}
+#wrapper .box.c:hover {
+  transition: transform 1500ms;
+  transform: skew(90deg, 90deg) rotate(0.5turn);
+}
+
+/* PULL ME */
+#pullme {
+  position: fixed;
+  right: 5px;
+  width: 2em;
+  top: 6em;
+}
+#pullme img {
+  width: 40px;
+}
+/* HOVER OVERME */
+#hoverme {
+  position: relative;
+}
+#hoverme img {
+  width: 26px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+
+@media screen and (max-width: 400px){
+  #pullme {
+    top: 12em;
+  }
+}
+

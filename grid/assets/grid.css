@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Lovecraftimus;
+  src: url('../../shared/lovecraftimus/Lovecraftimus.otf');
+}
+
+
 /* GRID CSS */
 /* thi is it - honest! */
 
@@ -22,11 +28,14 @@ nav {
 }
 
 /* GENERAL */
-h1, p {
-  font-family: sans-serif;
+h1{
+  font-family: 'Lovecraftimus', sans-serif;
 }
 h1{
   text-transform: uppercase;
+}
+p, span, div {
+  font-family: sans-serif;
 }
 body {
   padding: 2em;

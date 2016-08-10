@@ -51,10 +51,6 @@ nav li {
   width: 40px;
   height: 40px;
 }
-#logo {
-  background-color: #c53827;
-  display: inline-block;
-}
 #menu-button {
   background-color: #b5b1b1;
   display: none;
@@ -70,21 +66,21 @@ nav li {
 
 @media screen and (max-width: 400px){
   #menu-button {
-    display: inline-block;
+    display: block;
   }
   #menu {
     transition: transform 500ms;
     transform: translate(0px, -260px);
   }
   #menu.move-in {
-    transform: translate(0, 0);
+    transform: translate(0, 55px);
   }
   main#content {
     transition: transform 500ms;
-    transform: translate(0px, -200px);
+    transform: translate(0px, -140px);
   }
   main#content.move-in {
-    transform: translate(0, 0);
+    transform: translate(0, 55px);
   }
 }
 
